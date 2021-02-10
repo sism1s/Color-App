@@ -12,6 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import { ChromePicker } from "react-color";
+import { colors } from "@material-ui/core/colors";
 
 const drawerWidth = 400;
 
@@ -81,6 +82,7 @@ class NewPaletteForm extends Component {
       colors: ["purple", "#a15932"],
     };
     this.updateCurrentColor = this.updateCurrentColor.bind(this);
+    this.addNewColor = this.addNewColor.bind(this);
   }
   updateCurrentColor(newColor) {
     this.setState({ currentColor: newColor.hex });
@@ -95,7 +97,7 @@ class NewPaletteForm extends Component {
   };
 
   addNewColor() {
-    this.setState;
+    this.setState({ colors: [...this.state.colors, this.state.currentColor] });
   }
 
   render() {
@@ -157,6 +159,7 @@ class NewPaletteForm extends Component {
             variant="contained"
             color="primary"
             style={{ backgroundColor: this.state.currentColor }}
+            onClick={this.addNewColor}
           >
             Add Color
           </Button>
@@ -167,6 +170,11 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
+          <ul>
+            {this.state.colors.map((color) => (
+              <li style={{ backgroundColor: color }}>{color}</li>
+            ))}
+          </ul>
         </main>
       </div>
     );
