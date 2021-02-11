@@ -178,7 +178,7 @@ class NewPaletteForm extends Component {
                 value={this.state.newPaletteName}
                 name="newPaletteName"
                 onChange={this.handleChange}
-                validators={["required", isPaletteNameUnique]}
+                validators={["required", "isPaletteNameUnique"]}
                 errorMessages={["Enter Palette Name", "Name already used"]}
               />
               <Button variant="contained" color="primary" type="submit">
