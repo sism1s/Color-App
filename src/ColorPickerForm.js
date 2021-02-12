@@ -8,6 +8,7 @@ const styles = {
   picker: {
     width: "300px !important",
     marginTop: "2rem",
+    cursor: "pointer",
   },
 
   addColor: {
