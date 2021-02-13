@@ -11,7 +11,7 @@ export default {
       opacity: 0,
       transition: "opacity 500ms ease-out",
     },
-  },git 
+  },
 
   root: {
     height: "100vh",
