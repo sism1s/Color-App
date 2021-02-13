@@ -1,7 +1,18 @@
 import sizes from "./sizes";
 import bg from "./bg.svg";
+import transitions from "@material-ui/core/styles/transitions";
 
 export default {
+  "@global": {
+    ".fade-exit": {
+      opacity: 1,
+    },
+    ".fade-exit-active": {
+      opacity: 0,
+      transition: "opacity 500ms ease-out",
+    },
+  },git 
+
   root: {
     height: "100vh",
     display: "flex",
