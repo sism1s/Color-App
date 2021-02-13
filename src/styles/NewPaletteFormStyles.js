@@ -1,4 +1,5 @@
 import { DRAWER_WIDTH } from "../constants";
+import sizes from "./sizes";
 
 const drawerWidth = DRAWER_WIDTH;
 
@@ -27,12 +28,15 @@ const styles = (theme) => ({
   content: {
     flexGrow: 1,
     height: "calc(100vh - 64px)",
-    padding: "0.5px",
+    padding: "1px 0px",
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
     marginLeft: -drawerWidth,
+    [sizes.down("lg")]: {
+      padding: "2px 0px",
+    },
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
