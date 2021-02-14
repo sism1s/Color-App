@@ -46,9 +46,6 @@ const styles = (theme) => ({
   },
   button: {
     margin: "0 0.5rem",
-    [sizes.down("xs")]: {
-      marginLeft: "10rem",
-    },
   },
   title: {
     [sizes.down("md")]: {
