@@ -21,7 +21,7 @@ const styles = (theme) => ({
     display: "flex",
     alignItems: "center",
     width: "100%",
-    padding: "10px",
+    padding: "px",
     ...theme.mixins.toolbar,
     justifyContent: "flex-end",
   },

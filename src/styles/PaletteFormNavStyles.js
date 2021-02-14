@@ -40,12 +40,15 @@ const styles = (theme) => ({
     "& a": {
       textDecoration: "none",
     },
-    [sizes.down("xm")]: {
+    [sizes.down("xs")]: {
       marginRight: "0.5rem",
     },
   },
   button: {
     margin: "0 0.5rem",
+    [sizes.down("xs")]: {
+      marginLeft: "10rem",
+    },
   },
   title: {
     [sizes.down("md")]: {

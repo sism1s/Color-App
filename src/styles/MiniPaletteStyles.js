@@ -1,5 +1,3 @@
-import zIndex from "@material-ui/core/styles/zIndex";
-
 export default {
   root: {
     backgroundColor: "white",
@@ -20,6 +18,7 @@ export default {
     width: "100%",
     borderRadius: "5px",
     overflow: "hidden",
+    margin: 0,
   },
 
   title: {
@@ -42,9 +41,10 @@ export default {
     height: "25%",
     width: "20%",
     display: "inline-block",
-    margin: "0 auto",
+    // margin: "0 auto",
     position: "relative",
     marginBottom: "-4px",
+    overflow: "hidden",
   },
 
   deleteIcon: {
