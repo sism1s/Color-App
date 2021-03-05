@@ -43,13 +43,17 @@ const styles = (theme) => ({
     [sizes.down("xs")]: {
       marginRight: "0.5rem",
     },
+
+    [sizes.down("mdm")]: {
+      display: (props) => (props.open ? "none" : ""),
+    },
   },
   button: {
     margin: "0 0.5rem",
   },
   title: {
-    [sizes.down("md")]: {
-      display: "none",
+    [sizes.down("mdm")]: {
+      display: (props) => (props.open ? "none" : ""),
     },
   },
 });
