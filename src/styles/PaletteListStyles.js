@@ -21,7 +21,7 @@ export default {
     /* background by SVGBackgrounds.com */
     backgroundColor: "#394bad",
     backgroundImage: `url(${bg})`,
-    overflowY: "scroll",
+    // overflowY: "scroll",
   },
 
   title: {
